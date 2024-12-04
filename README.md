@@ -19,8 +19,8 @@ A Role-Based Access Control (RBAC) System built with Flask, Python, and JWT for 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/RBAC-System.git
-   cd RBAC-System
+   git clone [https://github.com/yourusername/RBAC-System.git
+   cd RBAC-System]
    ```
 
 2. Create a virtual environment (optional but recommended):
@@ -156,17 +156,4 @@ A Role-Based Access Control (RBAC) System built with Flask, Python, and JWT for 
 ## Contributing
 
 Feel free to fork this repository, contribute, or raise issues. Contributions are always welcome!
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-### Notes:
-- Replace `yourusername` in the GitHub link with your actual GitHub username.
-- Make sure to update the `JWT_SECRET_KEY` and database connection details as needed in your app.
-
-```
-
-This `README.md` file explains the features of your RBAC System, installation instructions, API usage, and how JWT is used for authentication.
+ 
