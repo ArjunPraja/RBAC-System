@@ -1,14 +1,23 @@
 {% extends "main.html" %}
 
-{% block title %}Login Page{% endblock %}
+{% block title %}register Page{% endblock %}
 
 {% block content %}
 <div style="height: 100vh; display: flex; justify-content: center; align-items: center;   background-color: #04333A">
     <div style="width: 400px; padding: 20px; background-color: #ffffff; border: 1px solid #ddd; box-shadow: 0px 12px 10px rgba(0, 0, 0, 0.1); border-radius: 8px; border: 2px solid #333;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  align-items: center; ">
-        <form action="/login" method="POST">
-            <h2 style="text-align: center; margin-bottom: 20px;">Login</h2>
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+        <form action="/register" method="POST">
+            <h2 style="text-align: center; margin-bottom: 20px;">Register</h2>
+            <label for="email">Name:</label>
+            <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                required 
+                style="width: 100%; padding: 10px; margin: 10px 0 20px 0; border: 1px solid #ccc; border-radius: 4px;"
+            >
+            
             <label for="email">Email:</label>
             <input 
                 type="email" 
@@ -17,8 +26,23 @@
                 required 
                 style="width: 100%; padding: 10px; margin: 10px 0 20px 0; border: 1px solid #ccc; border-radius: 4px;"
             >
+            
+            <label for="role">Role:</label>
+            <select id="role" name="role" required style="width: 100%; padding: 10px; margin: 10px 0 20px 0; border: 1px solid #ccc; border-radius: 4px;">
+                <option value="employee">Employee</option>
+                <option value="manager">Manager</option>
+            </select>
 
+            <br>
             <label for="password">Password:</label>
+            <input 
+                type="password" 
+                id="password" 
+                name="password" 
+                required 
+                style="width: 100%; padding: 10px; margin: 10px 0 20px 0; border: 1px solid #ccc; border-radius: 4px;"
+            >
+            <label for="password">Varify Password:</label>
             <input 
                 type="password" 
                 id="password" 
@@ -32,11 +56,13 @@
                     type="submit" 
                     style="padding: 10px 20px; border: none; background-color: #007BFF; color: #fff; border-radius: 4px; cursor: pointer;"
                 >
-                    Login
+                    register
                 </button>
             </div>
         </form>
-        Click here To  <a href="http://127.0.0.1:5000/register">Register</a>    </div>
+        Click here To  <a href="http://127.0.0.1:5000/login">Login</a>  
+
+    </div>
     
 </div>
 {% endblock %}
